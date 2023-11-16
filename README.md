@@ -13,7 +13,7 @@ Trong Go, Chỉ có public, private
 
 ## Keywords in Go
 ### 25 Keywords
-```go
+```
 break        default      func         interface    select
 case         defer        go           map          struct
 chan         else         goto         package      switch
