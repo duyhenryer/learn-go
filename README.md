@@ -23,19 +23,64 @@ continue     for          import       return       var
 Let’s divide all 25 keywords in 4 groups.
 ### Declaration
 * <kbd> const </kbd>
+
 The `const` keyword is used to introduce a name for a scalar value like 2 or 3.14, etc.
+```go
+package main
+
+import "fmt"
+
+const pi = 3.14
+
+func main() {
+    fmt.Println("Value of pi:", pi)
+}
+```
 * <kbd> var </kbd>
 
 The `var` keyword is used to create the variables in the `Go` language.
-```
-var x int            // Explicit type declaration
-var y = 42           // Implicit type declaration (inferred from the assigned value)
-var z float64 = 3.14 // Explicit type declaration with initialization
+```go
+package main
+
+import "fmt"
+
+func main() {
+	var x int = 5
+	fmt.Println("Value of x:", x)
+}
 ```
 * <kbd> func </kbd>
+
 The `func` keyword is used to declare a function.
+```go
+package main
+
+import "fmt"
+
+func greet() {
+    fmt.Println("Hello!")
+}
+
+func main() {
+    greet()
+}
+```
 * <kbd> type </kbd>
+
 We can use the `type` keyword to introduce a new struct type.
+
+```go
+package main
+
+import "fmt"
+
+type Celsius float64
+
+func main() {
+	var temperature Celsius = 23.5
+	fmt.Println("Temperature:", temperature, "Celsius")
+}
+```
 * <kbd> import </kbd>
 The `import` keyword is used to import packages.
 * <kbd> package </kbd>
@@ -47,9 +92,41 @@ The `chan` keyword is used to define a channel. In `Go`, you are allowed to run 
 * <kbd> interface </kbd>
 The `interface` keyword is used to specify a method set. A method set is a list of methods for a type.
 * <kbd> map </kbd>
+
 The `map` keyword defines a map type. A map os an unordered collection of the key-value pairs.
+```go
+package main
+
+import "fmt"
+
+func main() {
+    studentGrades := map[string]int{
+        "Alice": 90,
+        "Bob":   85,
+        "Charlie": 95,
+    }
+
+    fmt.Println("Bob's Grade:", studentGrades["Bob"])
+}
+```
 * <kbd> struct </kbd>
+
 Struct is a collection of fields. We can use the `struct` keyword followed by the field declarations.
+```go
+package main
+
+import "fmt"
+
+type Person struct {
+    Name string
+    Age  int
+}
+
+func main() {
+    person := Person{"John Doe", 25}
+    fmt.Println("Person:", person)
+}
+```
 ### Control Flow
 
 * <kbd> break </kbd>
