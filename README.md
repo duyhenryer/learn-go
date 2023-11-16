@@ -27,6 +27,7 @@ The `const` keyword is used to introduce a name for a scalar value like 2 or 3.1
 * <kbd> var </kbd>
 
 The `var` keyword is used to create the variables in the `Go` language.
+
 Example:
 ```
 var x int            // Explicit type declaration
