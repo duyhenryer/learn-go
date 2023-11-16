@@ -34,6 +34,7 @@ We can use the `type` keyword to introduce a new struct type.
 The `import` keyword is used to import packages.
 * package
 The code is grouped as a unit in a package. The `package` keyword is used to define one.
+
 ### Composite Types
 * chan
 The `chan` keyword is used to define a channel. In `Go`, you are allowed to run parallel pieces of code simultaneously.
@@ -72,6 +73,7 @@ Go allows you to use the return values as variables and you can use the `return`
 The `select` keyword lets a goroutine to wait during the simultaneous communication operations.
 * switch
 The `switch` statement is used to start a loop and use the if-else logic within the block.
+
 ### Function Modifier
 
 * defer
