@@ -26,6 +26,12 @@ Let’s divide all 25 keywords in 4 groups.
 The `const` keyword is used to introduce a name for a scalar value like 2 or 3.14, etc.
 * <kbd> var </kbd>
 The `var` keyword is used to create the variables in the `Go` language.
+Example:
+```
+var x int            // Explicit type declaration
+var y = 42           // Implicit type declaration (inferred from the assigned value)
+var z float64 = 3.14 // Explicit type declaration with initialization
+```
 * <kbd> func </kbd>
 The `func` keyword is used to declare a function.
 * <kbd> type </kbd>
