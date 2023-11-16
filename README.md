@@ -25,6 +25,7 @@ Let’s divide all 25 keywords in 4 groups.
 * <kbd> const </kbd>
 The `const` keyword is used to introduce a name for a scalar value like 2 or 3.14, etc.
 * <kbd> var </kbd>
+
 The `var` keyword is used to create the variables in the `Go` language.
 Example:
 ```
