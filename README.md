@@ -143,11 +143,39 @@ The `else` keyword is used with the `if` keyword to execute an alternate stateme
 * <kbd> fallthrough </kbd>
 This keyword is used in a case within a switch statement. When we use this keyword, the next case is entered.
 * <kbd> for </kbd>
+
 The `for` keyword is used to begin a for loop.
+```go
+package main
+
+import "fmt"
+
+func main() {
+    for i := 1; i <= 5; i++ {
+        fmt.Println(i)
+    }
+}
+```
 * <kbd> goto </kbd>
 The `goto` keyword offers a jump to a labeled statement without any condition.
 * <kbd> if </kbd>
+
 The `if` statement is used to check a certain condition within a loop.
+```go
+package main
+
+import "fmt"
+
+func main() {
+    x := 10
+
+    if x > 5 {
+        fmt.Println("x is greater than 5")
+    } else {
+        fmt.Println("x is not greater than 5")
+    }
+}
+```
 * <kbd> range </kbd>
 The `range` keyword lets you iterate items over the list items like a map or an array.
 * <kbd> return </kbd>
@@ -155,7 +183,26 @@ Go allows you to use the return values as variables and you can use the `return`
 * <kbd> select </kbd>
 The `select` keyword lets a goroutine to wait during the simultaneous communication operations.
 * <kbd> switch </kbd>
+
 The `switch` statement is used to start a loop and use the if-else logic within the block.
+```go
+package main
+
+import "fmt"
+
+func main() {
+    day := "Saturday"
+
+    switch day {
+    case "Monday":
+        fmt.Println("It's the start of the week.")
+    case "Saturday", "Sunday":
+        fmt.Println("It's the weekend!")
+    default:
+        fmt.Println("It's a regular weekday.")
+    }
+}
+```
 ### Function Modifier
 
 * <kbd> defer </kbd>
