@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func getConcatenation(nums []int) []int {
 	//return append(nums, nums...)
 	result := nums
@@ -10,8 +12,7 @@ func getConcatenation(nums []int) []int {
 }
 
 func main() {
-	//nums := [...]int{1, 2, 3, 4, 5}
-	//var nums [5]int = [...]int{1, 2, 3, 4, 5}
-	//fmt.Println(getConcatenation(nums)
+	nums := []int{1, 2, 3, 4, 5}
+	fmt.Println(getConcatenation(nums))
 
 }
