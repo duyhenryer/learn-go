@@ -1,15 +1,48 @@
 # learn-go
+*Noted:*
+
 Trong Go, Chỉ có public, private 
-- 
+* <kbd> array </kbd> - Nó là value type
+* <kbd> slice </kbd> - Nó là reference type tham chiếu tới mảng. Slice thường được tạo bằng cắt 1 phần của array. Mọi thay đổi trong slice sẽ ảnh hưởng đến mảng gốc và ngược lại.
 
-
-
-### Map
 ```go
+	// Chỉ muốn làm việc với value, bỏ qua index và ngược lại. 
+	for _, value := range countries {
+		fmt.Println(value)
+	}
+    for index, _ := range countries {
+    fmt.Println(index)
+    }
+```
 
+
+### Syntax
+* <kbd> array </kbd> 
+```go
+# Declare 1
+array_name := [length]Type{item1, item2, item3,...itemN}
+a := [5]int{1, 2, 3, 4, 5}
+
+# Declare 2
+var a[5]int
+
+# Declare 
+```
+* <kbd> slice </kbd> 
+```go
+# Declare 1
+[]T
+or
+[]T{}
+or
+[]T{value1, value2, value3, ...value n}
+
+var my_slice[]int
+var my_slice_1 = []string{"Geeks", "for", "Geeks"}
 
 
 ```
+    
 
 ## Keywords in Go
 ### 25 Keywords
