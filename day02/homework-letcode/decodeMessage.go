@@ -10,7 +10,7 @@ func decodeMessage(key string, message string) string {
 	hashMap := make(map[string]string)
 	key = strings.ReplaceAll(key, " ", "")
 	fmt.Println(key)
-	for i := 0; i < len(key); i++ {
+	for i := 0; i < len(alphabets); i++ {
 		hashMap[string(key[i])] = string(alphabets[i])
 		fmt.Println(string(key[i]), string(alphabets[i]))
 	}
