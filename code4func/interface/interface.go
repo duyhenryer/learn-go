@@ -21,15 +21,15 @@ type NextAnimal interface {
 	Animal
 }
 
-type Dog struct {
+type Dog1 struct {
 }
 
-func (d Dog) speak() {
+func (d Dog1) speak() {
 	fmt.Println("Woow")
 }
 
-func (d Dog) move() {
-	fmt.Println("Dogggggg")
+func (d Dog1) move() {
+	fmt.Println("Dog1ggggg")
 }
 
 // Empty interface
@@ -42,17 +42,17 @@ func goout(i interface{}) {
 }
 func main() {
 	var animal Animal
-	animal = Dog{}
+	animal = Dog1{}
 	animal.speak()
 	fmt.Println("------------------")
-	dog := Dog{}
-	var m Movement = dog
+	Dog1 := Dog1{}
+	var m Movement = Dog1
 	m.move()
-	var a Animal = dog
+	var a Animal = Dog1
 	a.speak()
 
 	fmt.Println("------------------")
-	var na NextAnimal = dog
+	var na NextAnimal = Dog1
 	na.move()
 	na.speak()
 
