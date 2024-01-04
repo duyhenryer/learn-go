@@ -5,6 +5,13 @@ Trong Go, Chỉ có public, private
 * <kbd> array </kbd> - Nó là value type
 * <kbd> slice </kbd> - Nó là reference type tham chiếu tới mảng. Slice thường được tạo bằng cắt 1 phần của array. Mọi thay đổi trong slice sẽ ảnh hưởng đến mảng gốc và ngược lại.
 
+*Cli*
+```go
+go mod init
+go get -u gopkg.in/yaml.v3
+
+```
+
 ```go
 	// Chỉ muốn làm việc với value, bỏ qua index và ngược lại. 
 	for _, value := range countries {

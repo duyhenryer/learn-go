@@ -1,0 +1,51 @@
+---
+sha: abcd1234
+service_catalog:
+  version: 1
+  ownership:
+    - name: service1
+      long_name: service1
+      description: service1 description.
+      kind: logical
+      maintainer: user1
+      team: team1
+      exec_sponsor: user1
+      product_manager: user2
+      repo: https://github.com/repo/repo1
+      team_slack: channel1
+      sev2:
+        issue: https://github.com/repo/repo1/issues
+        tta: 1 business day
+      sev3:
+        slack: channel1
+      qos: critical
+      tier: 1
+    - name: github/service2
+      long_name: service2
+      description: service2 description.
+      kind: logical
+      maintainer: user3
+      team: team2
+      exec_sponsor: user4
+      product_manager: user4
+      repo: https://github.com/github/repo2
+      team_slack: channel2
+      sev2:
+        issue: https://github.com/github/repo2/issues
+        tta: 1 business day
+      sev3:
+        slack: channel2
+      qos: best_effort
+      dependencies:
+        - github
+      tier: 2
+files:
+  "file1":
+    codeowners:
+      - "@github/team2"
+    maintainer_team: "@github/team2"
+    reviewer_teams:
+      - "@github/team2"
+    service: github/service2
+  "file2":
+    service: github/service2
